@@ -21,7 +21,16 @@
         <Label Content="Set the timer for taking a break:" HorizontalAlignment="Left" Margin="10,53,0,0"
          VerticalAlignment="Top" Width="182"/>
 
-        <ComboBox HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="462" />
+        <!-- The ComboBox connects to the TimeOptions variable of the MainWindow object. Inside that variable
+        is a list of TimeOption objects. The ComboBox goes through the list and gets the relevant data to show
+        the user -->
+        
+        <ComboBox Name="TimeChoice" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="462" 
+         Text="-- select a time --"
+         ItemsSource="{Binding Path=TimeOptions}"
+         DisplayMemberPath="Name"
+         SelectedValuePath="Duration" SelectionChanged="TimeChoice_SelectionChanged">    
+        </ComboBox>
         
         <TextBlock HorizontalAlignment="Left" Margin="10,173,0,0" Text="TextBlock" VerticalAlignment="Top"
         TextAlignment="Center" Height="64" Width="462"/>

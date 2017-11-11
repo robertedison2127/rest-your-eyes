@@ -20,9 +20,16 @@ namespace RestYourEyes
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<TimeOption> TimeOptions { get; set; }
+
         public MainWindow()
         {
+            TimeOptions = new List<TimeOption>();
+            TimeOptions.Add(new TimeOption("6 second text", 6000));
+            TimeOptions.Add(new TimeOption("25 minutes", 1500000));
+            TimeOptions.Add(new TimeOption("30 minutes", 1800000));
             InitializeComponent();
+            this.DataContext = this;
         }
 
         private void Set_Timer(object sender, RoutedEventArgs e)
@@ -38,5 +45,11 @@ namespace RestYourEyes
         {
             Close();
         }
+
+        private void TimeChoice_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MessageBox.Show(TimeChoice.SelectedValue.ToString());
+        }
+
     }
 }
