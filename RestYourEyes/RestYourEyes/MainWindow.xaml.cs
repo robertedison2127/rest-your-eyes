@@ -24,5 +24,19 @@ namespace RestYourEyes
         {
             InitializeComponent();
         }
+
+        private void Set_Timer(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You clicked set timer");
+        }
+
+        private void License(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You clicked show license");
+        }
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
