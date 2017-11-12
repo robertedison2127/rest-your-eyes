@@ -44,15 +44,15 @@ namespace RestYourEyes
             Close();
         }
 
-        private void TimeChoice_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void cboTimeChoice_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             TimeOption selectedTimeOption;
-            selectedTimeOption = (TimeOption) TimeChoice.SelectedItem;
-            setTimer(selectedTimeOption.Duration);
-            TimerStatus.Text = selectedTimeOption.Name;
+            selectedTimeOption = (TimeOption) cboTimeChoice.SelectedItem;
+            SetTimer(selectedTimeOption.Duration);
+            txtbTimerStatus.Text = selectedTimeOption.Name;
         }
 
-        private void setTimer(int timerDuration)
+        private void SetTimer(int timerDuration)
         {
             if (eyeRestTimer.Enabled == false)
             {

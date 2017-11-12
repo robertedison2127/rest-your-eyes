@@ -4,7 +4,7 @@
         Title="Rest Your Eyes - About" Height="502.198" Width="450.549"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"
+        <TextBlock Name="txtbLicense" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"
         Height="390" Width="416" ScrollViewer.VerticalScrollBarVisibility="Disabled"
         TextWrapping="Wrap">
             <Span Background="White" Foreground="Black">

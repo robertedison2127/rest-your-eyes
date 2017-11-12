@@ -4,7 +4,7 @@
         Title="Rest Your Eyes" Height="347.436" Width="503.205" ResizeMode="CanMinimize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Menu HorizontalAlignment="Left" Height="21" Margin="10,10,0,0" VerticalAlignment="Top"
+        <Menu Name="mnuMainMenu" HorizontalAlignment="Left" Height="21" Margin="10,10,0,0" VerticalAlignment="Top"
          Width="462" IsMainMenu="True">
 
             <MenuItem Header="_Timer">
@@ -16,21 +16,21 @@
 
         </Menu>
 
-        <Label Content="Set the timer for taking a break:" HorizontalAlignment="Left" Margin="10,53,0,0"
-         VerticalAlignment="Top" Width="182"/>
+        <Label Name="lblTopMessage" Content="Set the timer for taking a break:" HorizontalAlignment="Left"
+               Margin="10,53,0,0" VerticalAlignment="Top" Width="182"/>
 
         <!-- The ComboBox connects to the TimeOptions variable of the MainWindow object. Inside that variable
         is a list of TimeOption objects. The ComboBox goes through the list and gets the relevant data to show
         the user -->
         
-        <ComboBox Name="TimeChoice" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="462" 
+        <ComboBox Name="cboTimeChoice" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="462" 
          Text="-- select a time --"
-         ItemsSource="{Binding Path=TimeOptions}"
+         ItemsSource="{Binding Path=timeOptions}"
          DisplayMemberPath="Name"
-         SelectedValuePath="Duration" SelectionChanged="TimeChoice_SelectionChanged">    
+         SelectedValuePath="Duration" SelectionChanged="cboTimeChoice_SelectionChanged">    
         </ComboBox>
         
-        <TextBlock Name="TimerStatus" HorizontalAlignment="Left" Margin="10,173,0,0" Text="No timer set"
+        <TextBlock Name="txtbTimerStatus" HorizontalAlignment="Left" Margin="10,173,0,0" Text="No timer set"
                    VerticalAlignment="Top" TextAlignment="Center" Height="64" Width="462"/>
 
     </Grid>
