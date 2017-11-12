@@ -34,17 +34,17 @@ namespace RestYourEyes
             this.DataContext = this;
         }
 
-        private void About(object sender, RoutedEventArgs e)
+        public void About(object sender, RoutedEventArgs e)
         {
             AboutWindow aboutWindow = new AboutWindow();
             aboutWindow.ShowDialog();
         }
-        private void Exit(object sender, RoutedEventArgs e)
+        public void Exit(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
-        private void cboTimeChoice_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        public void cboTimeChoice_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             TimeOption selectedTimeOption;
             selectedTimeOption = (TimeOption) cboTimeChoice.SelectedItem;
@@ -52,7 +52,7 @@ namespace RestYourEyes
             txtbTimerStatus.Text = selectedTimeOption.Name;
         }
 
-        private void SetTimer(int timerDuration)
+        public void SetTimer(int timerDuration)
         {
             if (eyeRestTimer.Enabled == false)
             {
@@ -63,7 +63,7 @@ namespace RestYourEyes
             }
         }
 
-        private void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
+        public void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
         {
             MessageBox.Show("Please take a break and rest your eyes.", "Rest Your Eyes - Message");
             eyeRestTimer.Enabled = false;
