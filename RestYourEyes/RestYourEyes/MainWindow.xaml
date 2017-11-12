@@ -10,8 +10,8 @@
             <MenuItem Header="_Timer">
                 <MenuItem Header="E_xit" Click="Exit" />
             </MenuItem>
-            <MenuItem Header="_About">
-                <MenuItem Header="_License" Click="License"/>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Click="About"/>
             </MenuItem>
 
         </Menu>
@@ -30,8 +30,8 @@
          SelectedValuePath="Duration" SelectionChanged="TimeChoice_SelectionChanged">    
         </ComboBox>
         
-        <TextBlock Name="TimerStatus" HorizontalAlignment="Left" Margin="10,173,0,0" Text="TextBlock" VerticalAlignment="Top"
-        TextAlignment="Center" Height="64" Width="462"/>
+        <TextBlock Name="TimerStatus" HorizontalAlignment="Left" Margin="10,173,0,0" Text="No timer set"
+                   VerticalAlignment="Top" TextAlignment="Center" Height="64" Width="462"/>
 
     </Grid>
 </Window>

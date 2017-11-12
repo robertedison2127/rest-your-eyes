@@ -11,3 +11,5 @@ C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\RestYourEyes\bin\Debug\RestYo
 C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\RestYourEyes\bin\Debug\RestYourEyes.pdb
 C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\RestYourEyes\obj\Debug\RestYourEyes.exe
 C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\RestYourEyes\obj\Debug\RestYourEyes.pdb
+C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\RestYourEyes\obj\Debug\AboutWindow.baml
+C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\RestYourEyes\obj\Debug\AboutWindow.g.cs

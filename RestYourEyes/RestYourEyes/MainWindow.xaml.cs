@@ -27,16 +27,17 @@ namespace RestYourEyes
         public MainWindow()
         {
             TimeOptions = new List<TimeOption>();
-            TimeOptions.Add(new TimeOption("6 second text", 6000));
             TimeOptions.Add(new TimeOption("25 minutes", 1500000));
             TimeOptions.Add(new TimeOption("30 minutes", 1800000));
+            TimeOptions.Add(new TimeOption("6 second test", 6000));
             InitializeComponent();
             this.DataContext = this;
         }
 
-        private void License(object sender, RoutedEventArgs e)
+        private void About(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You clicked show license");
+            AboutWindow aboutWindow = new AboutWindow();
+            aboutWindow.ShowDialog();
         }
         private void Exit(object sender, RoutedEventArgs e)
         {
