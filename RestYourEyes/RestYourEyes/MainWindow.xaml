@@ -25,7 +25,7 @@
         
         <ComboBox Name="cboTimeChoice" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="462" 
          Text="-- select a time --"
-         ItemsSource="{Binding Path=timeOptions}"
+         ItemsSource="{Binding Path=TimeOptions}"
          DisplayMemberPath="Name"
          SelectedValuePath="Duration" SelectionChanged="cboTimeChoice_SelectionChanged">    
         </ComboBox>

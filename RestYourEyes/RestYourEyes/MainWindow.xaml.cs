@@ -65,8 +65,8 @@ namespace RestYourEyes
 
         public void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
         {
-            MessageBox.Show("Please take a break and rest your eyes.", "Rest Your Eyes - Message");
             eyeRestTimer.Enabled = false;
+            MessageBox.Show("Please take a break and rest your eyes.", "Rest Your Eyes - Message");
         }
 
     }
