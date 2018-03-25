@@ -1,7 +1,0 @@
-C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\restyoureyestests\obj\Debug\restyoureyestests.csprojResolveAssemblyReference.cache
-C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\restyoureyestests\bin\Debug\restyoureyestests.dll
-C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\restyoureyestests\bin\Debug\restyoureyestests.pdb
-C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\restyoureyestests\bin\Debug\RestYourEyes.exe
-C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\restyoureyestests\bin\Debug\RestYourEyes.pdb
-C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\restyoureyestests\obj\Debug\restyoureyestests.dll
-C:\GitHub\restyoureyes\rest-your-eyes\RestYourEyes\restyoureyestests\obj\Debug\restyoureyestests.pdb

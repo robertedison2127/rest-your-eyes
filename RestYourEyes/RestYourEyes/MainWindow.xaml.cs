@@ -29,6 +29,7 @@ namespace RestYourEyes
             TimeOptions = new List<TimeOption>();
             TimeOptions.Add(new TimeOption("25 minutes", 1500000));
             TimeOptions.Add(new TimeOption("30 minutes", 1800000));
+            TimeOptions.Add(new TimeOption("60 minutes", 3600000));
             TimeOptions.Add(new TimeOption("6 second test", 6000));
             InitializeComponent();
             this.DataContext = this;
@@ -49,7 +50,7 @@ namespace RestYourEyes
             TimeOption selectedTimeOption;
             selectedTimeOption = (TimeOption) cboTimeChoice.SelectedItem;
             SetTimer(selectedTimeOption.Duration);
-            txtbTimerStatus.Text = selectedTimeOption.Name;
+            txtbTimerStatus.Text = "Time set for " + selectedTimeOption.Name;
         }
 
         public void SetTimer(int timerDuration)
